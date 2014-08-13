@@ -1,0 +1,6 @@
+ipython
+pdbpp
+mysql_python
+django-redis-sessions
+https://www.djangoproject.com/download/1.7c2/tarball/
+django-grappelli
