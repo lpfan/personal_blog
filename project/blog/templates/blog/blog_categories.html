@@ -1,0 +1,47 @@
+{%extends "base.html"%}
+
+{% block sidebar%}
+
+<aside>
+    <nav>
+        <ul class="aside-menu">
+        {%for category in object_list %}
+            <li>{{category.title}}</li>
+        {%endfor%}
+        </ul>
+    </nav>
+</aside>
+
+{%endblock%}
+
+{%block main_content%}
+
+<section>
+
+    <h2>Latest Posts</h2>
+
+    <div class="post-row">
+        <figure>
+            <img src="images/sample.png" width="96" height="96" alt="">
+            <figcaption>John Doe<span>ceo</span></figcaption>
+        </figure>
+        <figure>
+            <img src="images/sample.png" width="96" height="96" alt="">
+            <figcaption>Saundra Pittsley<span>team leader</span></figcaption>
+        </figure>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet…</p>
+    <p>Donec vel nisl nibh…</p>
+    <p>Donec vel nisl nibh…</p>
+
+    <figure>
+        <img src="images/sample.png" width="320" height="175" alt="">
+    </figure>
+    <figure>
+        <img src="images/sample.png" width="320" height="175" alt="">
+    </figure>
+
+</section>
+
+{%endblock%}
